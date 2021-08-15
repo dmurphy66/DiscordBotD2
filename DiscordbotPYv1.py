@@ -34,7 +34,7 @@ async def _info(ctx):
     await ctx.send(embed=embed)
     
 @bot.command(name='recov')
-@commands.has_permissions(administrator=True)
+
 async def _recov(ctx, user:discord.Member):
     if user == None:
         await ctx.send('Please specify a user!')
